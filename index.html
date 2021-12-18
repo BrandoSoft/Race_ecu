@@ -1,47 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<title>RaceEcu - Performance Center</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>RaceEcu - Performance Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/scripts/normalize.min.css">
+    <link rel="stylesheet" href="src/style/style.css">
 
 </head>
 <body>
-<div class="topnav">
-  <a href="#home">Kontakt</a>
-	<a href="#news">Hamownia</a>
-		<a href="#contact">Realizacje</a>
-			<a href="#news">Uslugi</a>
-				<a href="#about">O Nas</a>
-  <a class="active" href="#about">Home</a>
-  
-  <div class="login_bar">
-  <a href="#home" style="font-size:10px">RaceEcu - Performance Center</a>
-	<a href="mailto:biuro@raceecu.pl" style="font-size:10px">Fileservice: <span style="color: #339966;">Online!<span></a>
-</div>
-</div>
-<img src="gfx/big_logo_gfx.png" alt="maintance" class="center">
-		<center><p style="color:white">Strona w budowie. Zapraszamy niebawem. </p></center>
-			<center><p style="color:white">https://www.facebook.com/raceecupolska</p></center>
-			</div>
-<div>
-	
-		
-	<div class="wrap">
-  <div class="bg"></div>
-</div>
-	<script src='jquery.min.js'></script><script  src="./script.js"></script>
+<header>
+    <div class="topnav">
+        <div class="login-bar">
+            <a href="#home" style="font-size:10px">RaceEcu - Performance Center</a>
+            <a href="mailto:biuro@raceecu.pl" style="font-size:10px">
+                Fileservice: <span style="color: #339966;">Online!<span></a>
+        </div>
+        <div class="menu-items">
+            <a href="#about" id='0' class="menuItems">Home</a>
+            <a href="#about" id='1' class="menuItems">O Nas</a>
+            <a href="#news" id='2' class="menuItems">Uslugi</a>
+            <a href="#contact" id='3' class="menuItems">Realizacje</a>
+            <a href="#news" id='4' class="menuItems">Hamownia</a>
+            <a href="#home" id='5' class="menuItems">Kontakt</a>
+        </div>
+    </div>
+</header>
+<section>
+    <img src="src/img/big_logo_gfx.png" alt="maintance" class="logo">
+    <div class='info'>
+        <p>Strona w budowie. Zapraszamy niebawem. </p>
+        <p>https://www.facebook.com/raceecupolska</p>
+    </div>
+    <div class="wrap">
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg0.jpg" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg1.jpg" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg2.jpg" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg3.jpg" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg4.jpg" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="/src/img/bg5.jpg" alt="" class="bgImg"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="control prev"></div>
+        <div class="control next"></div>
+    </div>
+    <div class="contentBox">
+        <div class="hide">
+            <h2>Dodatkowe info dla Home</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="hide">
+            <h2>Kilak słów o nas</h2>
+            <p>Lorem Ipsum is simply dummy text of the prinaker including versions of Lorem printing and typesetting inare like Aldus PageMaker including versions of LoremIpsum.</p>
+        </div>
+        <div class="hide">
+            <h2>Krótki opis usług</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="hide">
+            <h2>Krótki opis realizacji</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions ofprinting and typesetting inare like Aldus PageMaker including versions of Loremprinting and typesetting inare like Aldus PageMaker including versions of Lorem Lorem Ipsum.</p>
+        </div>
+        <div class="hide">
+            <h2>PAre słów o hamowni</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="hide">
+            <h2>formularz z kontaktem?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions printing and typesetting inare like Aldus PageMaker including versions of Loremof Lorem Ipsum.</p>
+        </div>
+    </div>
 
+</section>
 <footer>
-<div class="contact">
-<a href="mailto:admin@raceecu.pl"><img src="gfx/chat.png">
-</div>
-<div class="footer">
-  <p style="font-size:14px">© 2021 RaceEcu.pl Wszelkie prawa zastrzeżone. RODO</p>
-</div>
+    <a href="mailto:admin@raceecu.pl">
+        <div class="contact">
+            <img src="src/img/chat.png" alt="icon of chat" class="chat"/>
+        </div>
+        <div class="footer">
+            <p style="font-size:14px">© 2021 RaceEcu.pl Wszelkie prawa zastrzeżone. RODO</p>
+        </div>
+    </a>
 </footer>
+
+
+<script src='src/scripts/jquery.min.js'></script>
+<script src="src/scripts/script.js"></script>
+
 </body>
 </html>
