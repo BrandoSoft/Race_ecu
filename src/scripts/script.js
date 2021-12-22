@@ -83,3 +83,17 @@ const prevSlide = () => {
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
+// Hamburger
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.topnav');
+const content = document.querySelector('.logo-and-context')
+
+const handleClick = () =>{
+    hamburger.classList.toggle('hamburger--active');
+    nav.classList.toggle('navigation--active');
+    content.classList.toggle('content--active');
+    // console.log(content)
+}
+
+hamburger.addEventListener('click', handleClick)

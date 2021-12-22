@@ -14,25 +14,27 @@
     <div class="topnav">
         <div class="login-bar">
             <a href="#" style="font-size:10px">RaceEcu - Performance Center</a>
-            <a href="mailto:biuro@raceecu.pl" style="font-size:10px">
+            <a href="mailto:biuro@raceecu.pl">
                 Fileservice: <span style="color: #339966;">Online!</span></a>
         </div>
-        <div class="menu-items">
-            <a href="#" id='0' class="menuItems">Home</a>
-            <a href="#" id='1' class="menuItems">O Nas</a>
-            <a href="#" id='2' class="menuItems">Uslugi</a>
-            <a href="#" id='3' class="menuItems">Realizacje</a>
-            <a href="#" id='4' class="menuItems">Hamownia</a>
-            <a href="#" id='5' class="menuItems">Kontakt</a>
-        </div>
+
+        <ul class="menu-items">
+            <li><a href="#" id='0' class="menuItems">Home</a></li>
+            <li><a href="#" id='1' class="menuItems">O Nas</a></li>
+            <li><a href="#" id='2' class="menuItems">Uslugi</a></li>
+            <li><a href="#" id='3' class="menuItems">Realizacje</a></li>
+            <li><a href="#" id='4' class="menuItems">Hamownia</a></li>
+            <li><a href="#" id='5' class="menuItems">Kontakt</a></li>
+        </ul>
+        <button class="hamburger hamburger--active">
+    <span class="hamburger__box">
+        <span class="hamburger__inner"></span>
+    </span>
+        </button>
     </div>
 </header>
 <section>
-    <img src="src/img/big_logo_gfx.png" alt="maintance" class="logo">
-    <div class='info'>
-        <p>Strona w budowie. Zapraszamy niebawem. </p>
-        <p>https://www.facebook.com/raceecupolska</p>
-    </div>
+
     <div class="wrap">
         <div id="sliderImg" class="trans">
             <div class="bg"><img src="./src/img/bg0.jpg" alt="" class="bgImg"></div>
@@ -57,32 +59,46 @@
         <div class="control prev"></div>
         <div class="control next"></div>
     </div>
-    <div class="contentBox">
-        <div class="hide">
-            <h2>Dodatkowe info dla Home</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="logo-and-context">
+        <div class="logo">
+            <img src="src/img/big_logo_gfx.png" alt="maintance" class="logo-img">
         </div>
-        <div class="hide">
-            <h2>Kilak słów o nas</h2>
-            <p>Lorem Ipsum is simply dummy text of the prinaker including versions of Lorem printing and typesetting inare like Aldus PageMaker including versions of LoremIpsum.</p>
-        </div>
-        <div class="hide">
-            <h2>Krótki opis usług</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="hide">
-            <h2>Krótki opis realizacji</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions ofprinting and typesetting inare like Aldus PageMaker including versions of Loremprinting and typesetting inare like Aldus PageMaker including versions of Lorem Lorem Ipsum.</p>
-        </div>
-        <div class="hide">
-            <h2>PAre słów o hamowni</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="hide">
-            <h2>formularz z kontaktem?</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including versions printing and typesetting inare like Aldus PageMaker including versions of Loremof Lorem Ipsum.</p>
+        <div class="contentBox">
+            <div class="hide contentBox-left">
+                <h2>Dodatkowe info dla Home</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+            </div>
+            <div class="hide contentBox-left">
+                <h2>Kilak słów o nas</h2>
+                <p>Lorem Ipsum is simply dummy text of the prinaker including versions of Lorem printing and typesetting
+                    inare like Aldus PageMaker including versions of LoremIpsum.</p>
+            </div>
+            <div class="hide contentBox-left">
+                <h2>Krótki opis usług</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+            </div>
+            <div class="hide contentBox-left">
+                <h2>Krótki opis realizacji</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
+                    versions ofprinting and typesetting inare like Aldus PageMaker including versions of Loremprinting
+                    and typesetting inare like Aldus PageMaker including versions of Lorem Lorem Ipsum.</p>
+            </div>
+            <div class="hide contentBox-left">
+                <h2>PAre słów o hamowni</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+            </div>
+            <div class="hide contentBox-left">
+                <h2>formularz z kontaktem?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
+                    versions printing and typesetting inare like Aldus PageMaker including versions of Loremof Lorem
+                    Ipsum.</p>
+            </div>
         </div>
     </div>
+
 
 </section>
 <footer>
@@ -95,6 +111,7 @@
         </div>
     </a>
 </footer>
+
 
 
 <script src='src/scripts/jquery.min.js'></script>
