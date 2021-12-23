@@ -393,6 +393,7 @@ body {
     position: absolute;
     right: 5%;
     bottom: 5%;
+
 }
 
 .show {
@@ -404,8 +405,9 @@ body {
     display: block;
 }
 
-@media screen and (min-height: 1441px) {
+@media screen and (min-height: 1081px) {
     .pushed-down {
         align-self: center;
+        transform: translateY(145px);
     }
 }
