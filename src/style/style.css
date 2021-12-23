@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
     font-family: AgencyR;
     src: url(../font/AGENCYR.TTF);
@@ -61,7 +62,7 @@ body {
 }
 
 .controls {
-    margin:  20px 40px;
+    margin: 20px 40px;
     position: absolute;
     display: flex;
     top: 50%;
@@ -70,6 +71,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
 }
+
 .control {
     width: 20px;
     height: 20px;
@@ -83,15 +85,15 @@ body {
     transform: translateX(-50%);
 }
 
-.footer a{
+.footer a {
     position: fixed;
     left: 0;
-    bottom:1%;
+    bottom: 1%;
     width: 100%;
     color: white;
     text-align: center;
     text-decoration: none;
-    }
+}
 
 .topnav {
     overflow: hidden;
@@ -197,6 +199,7 @@ body {
     padding-bottom: 20px;
     letter-spacing: 2px;
 }
+
 .contentBox div p {
     font-family: AgencyR;
     font-size: 20px;
@@ -208,10 +211,6 @@ body {
     display: none;
 }
 
-.show {
-    display: block;
-    opacity: 1;
-}
 
 .hamburger {
     padding: 10px;
@@ -275,7 +274,8 @@ body {
     .login-bar {
         display: none;
     }
-    .topnav{
+
+    .topnav {
         justify-content: flex-end;
     }
 }
@@ -297,7 +297,6 @@ body {
     .contentBox {
         width: 100%;
     }
-
 
 
     .hamburger {
@@ -325,16 +324,18 @@ body {
 
 }
 
-.counters{
+.counters {
     display: flex;
     padding: 10px;
 }
+
 .counters div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .counters h3 {
     text-align: center;
     font-weight: normal;
@@ -344,7 +345,7 @@ body {
     align-self: flex-end;
 }
 
-.icons{
+.icons {
     width: 90px;
 }
 
@@ -353,34 +354,62 @@ body {
     font-size: 25px;
 }
 
-.contentBox .chart-div{
+.contentBox .chart-div {
     display: flex;
     padding-left: 0;
 }
 
 
-.contentBox .chart-div h2{
+.contentBox .chart-div h2 {
     align-self: flex-end;
     padding-bottom: 0;
 }
 
 .chart-div img {
-width: 70%;
+    width: 70%;
     padding-left: 20px;
 }
 
-.przeslona{
+.przeslona {
     width: 100px;
     height: 100px;
     background-color: #orange;
 }
 
-.send-file-button{
+.send-file-button {
     padding-left: 100px;
     margin-top: 20px;
     height: 50px;
 }
 
-.modal{
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+}
 
+.modal-close {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+.activeModal {
+    display: block;
+}
+
+@media screen and (min-height: 1441px) {
+    .pushed-down {
+        align-self: center;
+    }
 }

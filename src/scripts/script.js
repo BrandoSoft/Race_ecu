@@ -131,4 +131,19 @@ counters.forEach(counter => {
 
 // facebook
 
+// modal
+
+const modal = document.querySelector('.modal');
+const modalBtn = document.querySelector('.modal-close')
+const showModalBtn = document.querySelector('.send-file-button')
+
+const showModal = () => {
+    modal.classList.add('activeModal');
+}
+
+const closeModal = () => {
+    modal.classList.remove('activeModal');
+}
+showModalBtn.addEventListener('click', showModal)
+modalBtn.addEventListener('click',closeModal)
 
