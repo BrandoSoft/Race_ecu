@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: AgencyR;
+    src: url(../font/AGENCYR.TTF);
+}
 
 html, body {
     height: 100%;
@@ -11,7 +15,7 @@ html, body {
 body {
     margin: 0;
     position: relative;
-    font-family: "Arial, Helvetica, sans-serif;
+    font-family: "AgencyR, Arial, Helvetica, sans-serif;
 }
 
 .h1 {
@@ -57,46 +61,18 @@ body {
 }
 
 .controls {
+    margin:  20px 40px;
     position: absolute;
     display: flex;
     top: 50%;
     transform: translateY(-50%);
-    width: 100vw;
+    width: calc(100vw - 80px);
     justify-content: space-between;
-}
-
-.control {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    background-color: #404040;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    opacity: 0.2;
-    transition: 0.5s;
-
 }
-
-.control:hover {
-    opacity: 1;
-
-}
-
-.control:before {
-    content: '';
-    position: absolute;
+.control {
     width: 20px;
     height: 20px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    transform: rotate(45deg);
-}
-
-.control:nth-child(2) {
-    transform: rotate(180deg);
 }
 
 .info {
@@ -107,22 +83,15 @@ body {
     transform: translateX(-50%);
 }
 
-
-.chat {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    width: 100px;
-}
-
-.footer {
+.footer a{
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom:1%;
     width: 100%;
     color: white;
     text-align: center;
-}
+    text-decoration: none;
+    }
 
 .topnav {
     overflow: hidden;
@@ -200,7 +169,8 @@ body {
 }
 
 .logo-img {
-    width: 100%;
+    max-width: 600px;
+    width: 80%;
 }
 
 .contentBox {
@@ -212,7 +182,6 @@ body {
 
 .contentBox div {
     padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
@@ -223,7 +192,16 @@ body {
 
 .contentBox div h2 {
     color: #fff;
-    font-size: 1.1em;
+    font-family: AgencyR;
+    font-size: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.contentBox div p {
+    font-family: AgencyR;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 .hide {
@@ -320,10 +298,7 @@ body {
         width: 100%;
     }
 
-    .control {
-        width: 20px;
-        height: 20px;
-    }
+
 
     .hamburger {
         margin-top: 15px;
@@ -347,5 +322,65 @@ body {
     .navigation--active {
         transform: translateY(0);
     }
+
+}
+
+.counters{
+    display: flex;
+    padding: 10px;
+}
+.counters div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.counters h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.pushed-down {
+    align-self: flex-end;
+}
+
+.icons{
+    width: 90px;
+}
+
+.contentBox .counter {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.contentBox .chart-div{
+    display: flex;
+    padding-left: 0;
+}
+
+
+.contentBox .chart-div h2{
+    align-self: flex-end;
+    padding-bottom: 0;
+}
+
+.chart-div img {
+width: 70%;
+    padding-left: 20px;
+}
+
+.przeslona{
+    width: 100px;
+    height: 100px;
+    background-color: #orange;
+}
+
+.send-file-button{
+    padding-left: 100px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.modal{
 
 }

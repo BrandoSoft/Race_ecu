@@ -10,10 +10,18 @@
 
 </head>
 <body>
+
+<!-- Messenger Wtyczka czatu Code -->
+<div id="fb-root"></div>
+
+<!-- Your Wtyczka czatu code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
 <header>
     <div class="topnav">
         <div class="login-bar">
-            <a href="#" style="font-size:10px">RaceEcu - Performance Center</a>
+            <a href="#">RaceEcu - Performance Center</a>
             <a href="mailto:biuro@raceecu.pl">
                 Fileservice: <span style="color: #339966;">Online!</span></a>
         </div>
@@ -24,7 +32,8 @@
             <li><a href="#" id='2' class="menuItems">Uslugi</a></li>
             <li><a href="#" id='3' class="menuItems">Realizacje</a></li>
             <li><a href="#" id='4' class="menuItems">Hamownia</a></li>
-            <li><a href="#" id='5' class="menuItems">Kontakt</a></li>
+            <li><a href="#" id='5' class="menuItems">Fileservice</a></li>
+            <li><a href="#" id='6' class="menuItems">Kontakt</a></li>
         </ul>
         <button class="hamburger hamburger--active">
     <span class="hamburger__box">
@@ -40,39 +49,69 @@
             <div class="bg"><img src="./src/img/bg0.jpg" alt="" class="bgImg"></div>
         </div>
         <div id="sliderImg" class="trans">
-            <div class="bg"><img src="./src/img/bg1.jpg" alt="" class="bgImg"></div>
+            <div class="bg"><img src="./src/img/onas.png" alt="" class="bgImg"></div>
         </div>
         <div id="sliderImg" class="trans">
-            <div class="bg"><img src="./src/img/bg2.jpg" alt="" class="bgImg"></div>
+            <div class="bg"><img src="./src/img/uslugi.jpg" alt="" class="bgImg"></div>
         </div>
         <div id="sliderImg" class="trans">
-            <div class="bg"><img src="./src/img/bg3.jpg" alt="" class="bgImg"></div>
+            <div class="bg"><img src="./src/img/next.png" alt="" class="bgImg"></div>
         </div>
         <div id="sliderImg" class="trans">
-            <div class="bg"><img src="./src/img/bg4.jpg" alt="" class="bgImg"></div>
+            <div class="bg"><img src="./src/img/hamownia.png" alt="" class="bgImg"></div>
         </div>
         <div id="sliderImg" class="trans">
-            <div class="bg"><img src="./src/img/bg5.jpg" alt="" class="bgImg"></div>
+            <div class="bg"><img src="./src/img/realizacje.png" alt="" class="bgImg"></div>
+        </div>
+        <div id="sliderImg" class="trans">
+            <div class="bg"><img src="./src/img/kontakt.png" alt="" class="bgImg"></div>
         </div>
     </div>
     <div class="controls">
-        <div class="control prev"></div>
-        <div class="control next"></div>
+        <div class="control prev"><img src="./src/img/arrow_right.png" alt="prev arrow"></div>
+        <div class="control next"><img src="./src/img/arrow_left.png" alt="next arrow"></div>
     </div>
     <div class="logo-and-context">
         <div class="logo">
             <img src="src/img/big_logo_gfx.png" alt="maintance" class="logo-img">
         </div>
         <div class="contentBox">
-            <div class="hide contentBox-left">
-                <h2>Dodatkowe info dla Home</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
-                    versions of Lorem Ipsum.</p>
+            <div class="hide contentBox-left pushed-down">
+                <h2>Profesjonalne_Strojenie</h2>
+                <p> Głównym celem naszej firmy jest podnoszenie możliwości samochodów w bezpieczny sposób.
+                    Do każdego z klientów podchodzimy indywidualnie aby zapewnic najwyższą możliwą jakość usług.
+                    Profesjonalne pomiary na hamowni drogowej oraz wykonanie logów dynamicznych i ich analiza
+                    pozwala nam na uzyskanie jak najlepszych rezultatów modyfikacji.
+                    <br/><br/>
+                    Ceny modyfikajcji zaczynają sie od: 999zł netto</p>
+                <div class="counters">
+                    <div>
+                        <img src="./src/img/klienci_white.png" alt="" class="icons">
+                        <div class="counter" data-target="1630">0</div>
+                        <h3>Zadowolonych Klientów</h3>
+                    </div>
+                    <div>
+                        <img src="./src/img/zamowienia_red.png" alt="" class="icons">
+                        <div class="counter" data-target="3612">0</div>
+                        <h3>Zrealizowane zamówienia</h3>
+                    </div>
+                    <div>
+                        <img src="./src/img/pliki_white.png" alt="" class="icons">
+                        <div class="counter" data-target="2936">0</div>
+                        <h3>Zmodyfikowane pliki</h3>
+                    </div>
+                </div>
+
             </div>
             <div class="hide contentBox-left">
-                <h2>Kilak słów o nas</h2>
-                <p>Lorem Ipsum is simply dummy text of the prinaker including versions of Lorem printing and typesetting
-                    inare like Aldus PageMaker including versions of LoremIpsum.</p>
+                <h2>O Nas</h2>
+                <p>RaceEcu istnieje pod swoją nazwą od 2015r w Warszawie. Jako grupa przyjaciół o wspólnych pasjach
+                    oraz zainteresowaniach zajmujemy sie tym znacznie dłużej. Od samego początku specjalizowaliśmy sie
+                    w tuningu elektronicznym oraz tworzeniu nowych rozwiązań w świecie motosportu. Nasze specjalizacje
+                    to
+                    pełna grupa VAG, Opel, Saab, Fiat i BMW. Robimy także inne marki. Współpracujemy z firmami
+                    na terenie Polski i Europy.</p>
+
             </div>
             <div class="hide contentBox-left">
                 <h2>Krótki opis usług</h2>
@@ -86,15 +125,43 @@
                     and typesetting inare like Aldus PageMaker including versions of Lorem Lorem Ipsum.</p>
             </div>
             <div class="hide contentBox-left">
-                <h2>PAre słów o hamowni</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
-                    versions of Lorem Ipsum.</p>
+                <div class="chart-div">
+                    <h2>Hamownia</h2>
+                    <img src="./src/img/chart3.png" alt="">
+                    <div class="przeslona"></div>
+                </div>
+                <p>
+                    Hamownie drogowe, dzięki swojej innowacyjnej budowie, nie wymagają wymontowania silnika,
+                    ale pozwalają na błyskawiczną instalację w pojezdzie, w którym ma zostać przeprowadzony pomiar.
+                    Urządzenie może być z łatwością przetransportowane i skalibrowane w kilka minut.
+                    Główną zaletą hamowni DynometGPS jest wysoka precyzja pomiarów, a jednocześnie powtarzalność testów.
+                    Auto mierzone jest w warunkach w jakich porusza sie na codzień.
+                    <br/><br/>
+                    Ceny pomiarów zaczynają sie od: 149zł netto</p>
             </div>
             <div class="hide contentBox-left">
-                <h2>formularz z kontaktem?</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting inare like Aldus PageMaker including
-                    versions printing and typesetting inare like Aldus PageMaker including versions of Loremof Lorem
-                    Ipsum.</p>
+                <h2>FileService</h2>
+                <p>Oferujemy współpracę dla serwisów w zakresu chip tuningu, usuwania filtrów cząstek stałych,
+                    usuwaniu zaworu EGR, usuwania błędów DTC i innych modyfikacji sterownika silnika.
+                    Współpraca polega na obróbce wysłanego pliku na nasz serwer online.
+                    Robimy modyfikacje na podstawie logów załączonych przez klienta ( Stage: 1, 2 ,3)...
+                    Obsługujemy pliki: ALIENTECH, AUTOTUNER, BFLASH, CMD FLASH, MAGICMOTOSPORT, DIMSPORT...
+                    <br/><br/>
+                    Ceny modyfikajcji zaczynają sie od: 399zł netto</p>
+
+                <img src="./src/img/button.png" alt="" class="send-file-button">
+            </div>
+            <div class="hide contentBox-left">
+                <h2>Kontakt</h2>
+                <p>Wszystkie osoby zainteresowane współpracą, lub ofertą chiptuningu zapraszamy do kontaktu
+                    poprzez adres mailowy
+                    lub strone na facebooku. Istnieje możliwość dojazdu do klienta i wykonanie usługi
+                    chiptuningu lub diagnostyki (o ile pozwalają na to warunki). Osobom zainteresowanym stałą
+                    współpraca oferujemy konkurencyjne ceny i pakiety.
+                </p>
+                <p>
+                    Mail: biuro@raceecu.pl<br/>
+                    Facebook: https://www.facebook.com/raceecupolska</p>
             </div>
         </div>
     </div>
@@ -102,20 +169,40 @@
 
 </section>
 <footer>
-    <a href="mailto:admin@raceecu.pl">
-        <div class="contact">
-            <img src="src/img/chat.png" alt="icon of chat" class="chat"/>
-        </div>
-        <div class="footer">
-            <p style="font-size:14px">© 2021 RaceEcu.pl Wszelkie prawa zastrzeżone. RODO</p>
-        </div>
-    </a>
+    <p class="footer"><a href="mailto:admin@raceecu.pl"> © 2021 RaceEcu.pl Wszelkie prawa zastrzeżone. RODO</p> </a>
 </footer>
 
+<div class="modal hide"></div>
 
 
 <script src='src/scripts/jquery.min.js'></script>
 <script src="src/scripts/script.js"></script>
+
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "2256763761248556");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v12.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </body>
 </html>

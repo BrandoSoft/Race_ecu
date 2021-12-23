@@ -36,47 +36,47 @@ const nextBtn = document.querySelector('.next')
 const prevBtn = document.querySelector('.prev')
 const imgArr = document.querySelectorAll('#sliderImg');
 const menuArr = document.querySelectorAll('.menuItems')
-const contentArr = document.querySelectorAll('.contentBox div')
+const contentArr = document.querySelectorAll('.contentBox-left')
 
 
-let i = 0;
+let ii = 0;
 imgArr[0].classList.add('show');
 menuArr[0].classList.add('active');
 contentArr[0].classList.add('show')
 
 menuArr.forEach(item => item.addEventListener('click', ()=>{
-    i= Number(item.id);
+    ii= Number(item.id);
 
     imgArr.forEach(img => img.classList.remove('show'));
-    imgArr[i].classList.add('show');
+    imgArr[ii].classList.add('show');
 
     menuArr.forEach(menu => menu.classList.remove('active'));
-    menuArr[i].classList.add('active');
+    menuArr[ii].classList.add('active');
 
     contentArr.forEach(content => content.classList.remove('show'));
-    contentArr[i].classList.add('show');
+    contentArr[ii].classList.add('show');
 }))
 
 const nextSlide = () => {
-     console.log('na poczatku: ', i)
+     console.log('na poczatku: ', ii)
     imgArr.forEach(img => img.classList.remove('show'));
     contentArr.forEach(content => content.classList.remove('show'));
     menuArr.forEach(menu => menu.classList.remove('active'));
-    i === imgArr.length -1 ? i = -1 : i;
-    imgArr[i + 1].classList.add('show');
-    contentArr[i + 1].classList.add('show');
-    menuArr[i + 1].classList.add('active');
-    i++;
+    ii === imgArr.length -1 ? ii = -1 : ii;
+    imgArr[ii + 1].classList.add('show');
+    contentArr[ii + 1].classList.add('show');
+    menuArr[ii + 1].classList.add('active');
+    ii++;
 }
 const prevSlide = () => {
     imgArr.forEach(img => img.classList.remove('show'));
     contentArr.forEach( content => content.classList.remove('show'));
     menuArr.forEach(menu => menu.classList.remove('active'));
-    i === 0 ? i = imgArr.length : i;
-    imgArr[i - 1].classList.add('show');
-    contentArr[i - 1].classList.add('show');
-    menuArr[i - 1].classList.add('active');
-    i--;
+    ii === 0 ? ii = imgArr.length : ii;
+    imgArr[ii - 1].classList.add('show');
+    contentArr[ii - 1].classList.add('show');
+    menuArr[ii - 1].classList.add('active');
+    ii--;
 }
 
 
@@ -97,3 +97,38 @@ const handleClick = () =>{
 }
 
 hamburger.addEventListener('click', handleClick)
+
+// counter
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        // Lower inc to slow and higher to slow
+        const inc = target / speed;
+
+        // console.log(inc);
+        // console.log(count);
+
+        // Check if target is reached
+        if (count < target) {
+            // Add inc to count and output in counter
+            counter.innerText = Math.ceil(count + inc);
+            // Call function every ms
+            setTimeout(updateCount, 1);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCount();
+});
+
+
+// facebook
+
+
