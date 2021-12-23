@@ -410,4 +410,7 @@ body {
         align-self: center;
         transform: translateY(145px);
     }
+    .hamownia-pushup{
+        transform: translateY(100px);
+    }
 }
